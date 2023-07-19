@@ -11,9 +11,9 @@
 # -----------------
 en: &DEFAULT_EN
   header:
-    title: Welcome to our Studio!
-    text: It's Nice To Meet You
-    button: Tell Me More
+    title: 안녕하세요 백엔드 개발자 (신입) 김혜원입니다.
+    text: 안녕하세요 백엔드 개발자 (신입) 김혜원입니다.
+    button: TELL ME MORE
     buttonlink: "#services"
 
   services:

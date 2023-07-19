@@ -16,7 +16,7 @@ Use this area to describe your project. **Markdown** supported.
 optional info list (delete if not using):
 
 {:.list-inline} 
-- Date: 
+- Date: gggg
 - Client: 
 - Category: 
 
