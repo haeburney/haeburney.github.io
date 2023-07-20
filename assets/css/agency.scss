@@ -6,7 +6,8 @@
 @import "base/mixins.scss";
 
 // Custom colors
-$primary: {{ site.data.style.highlight | default: "#fed136" }} !default;
+// 원래 테마색 (노랑) #fed136
+$primary: {{ site.data.style.highlight | default: "#c59ee4" }} !default;
 $white: {{ site.data.style.white | default: "#fff" }} !default;
 $black: {{ site.data.style.black | default: "#000" }} !default;
 

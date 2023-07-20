@@ -11,25 +11,45 @@
 # -----------------
 en: &DEFAULT_EN
   header:
-    title: 안녕하세요 백엔드 개발자 (신입) 김혜원입니다.
-    text: 안녕하세요 백엔드 개발자 (신입) 김혜원입니다.
+    title: 안녕하세요, 백엔드 개발자 <strong>김혜원</strong>입니다.
+    text: <br>
     button: TELL ME MORE
-    buttonlink: "#services"
+    buttonlink: "#about"
 
   services:
-    title: "Services"
+    title: "Skills"
     text: "Lorem ipsum"
     section: services
     list:
-      - title: "E-Commerce"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-        icon: fas fa-shopping-cart #find more at https://fontawesome.com/icons
-      - title: "Responsive Design"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-        icon: fas fa-laptop
-      - title: "[Markdown](https://en.wikipedia.org/wiki/Markdown)"
-        desc: "Your description here, full **Markdown** support"
-        icon: fab fa-markdown
+      - title: "JAVA"
+        desc: " "
+        img : assets/img/language/java.svg
+      - title: "JavsScript"
+        desc: " "
+        img : assets/img/language/JS.svg
+      - title: "Spring Boot"
+        desc: " "
+        img : assets/img/language/spring.svg
+        alt: image alt text
+      - title: "C언어"
+        desc: " "
+        img : assets/img/language/c.svg
+        alt: image alt text
+      - title: "HTML5"
+        desc: " "
+        img : assets/img/language/HTML5.png
+        alt: image alt text
+      - title: "CSS3"
+        desc: " "
+        img : assets/img/language/CSS3.png
+        alt: image alt text
+      #   icon: fas fa-shopping-cart #find more at https://fontawesome.com/icons
+      # - title: "Responsive Design"
+      #   desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+      #   icon: fas fa-laptop
+      # - title: "[Markdown](https://en.wikipedia.org/wiki/Markdown)"
+      #   desc: "Your description here, full **Markdown** support"
+      #   icon: fab fa-markdown
 
   portfolio:
     title: "Portfolio"
@@ -44,34 +64,39 @@ en: &DEFAULT_EN
     # left is the default
     #start_align: "left"
     events:
-      - title: "Our Humble Beginnings"
-        year: "2009-2011"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-        image: assets/img/timeline/1.jpg
-        alt:
-      - title: "An Agency is Born"
-        year: "March 2011"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-        image: assets/img/timeline/2.jpg
-        alt:
-      - title: "Jekyll Theme is created"
-        year: "2019"
-        desc: "Ravi Riley converted Agency, a Bootstrap-based theme, into a Jekyll theme. The Jekyll theme can be installed as a Ruby gem, or remotely. For more information, visit the documentation."
-        image: assets/img/timeline/3.jpg
+      - title: "데이터자격검정 : SQLD"
+        year: "2023.07"
+        desc: "제 49회 SQL 개발자 (SQLD) 자격증을 취득하였습니다."
+        image: assets/img/timeline/data.png
         alt: image alt text
-      - title: "Title"
-        year: "2009-2011"
-        desc: "Your description here, **Markdown** is fully supported."
-        image: assets/img/timeline/4.jpg
+      - title: "KOSTA 웹 개발자 교육"
+        year: "2023.02 - 2023.07"
+        desc: "한국 소프트웨어 기술 진흥 협회에서 진행하는 '웹 애플리케이션 구축 프로젝트 기반 Full-Stack 개발자 양성' 커리큘럼을 수강하였습니다.<br> 두 번의 미니 프로젝트와 spring boot를 활용한 메인 프로젝트를 만든 경험이 있습니다."
+        image: assets/img/timeline/kosta.png
+        alt: image alt text
+      - title: "국가기술자격증 : 정보처리기사"
+        year: "2022.11"
+        desc: "대학교 4학년 때 정보처리기사 자격증을 취득하였습니다."
+        image: assets/img/timeline/qnet.png
+        alt: image alt text
+      - title: "군산대학교 컴퓨터정보공학과"
+        year: "2019.03 - 2023.02"
+        desc: "."
+        image: assets/img/timeline/ksnu.jpg
+        alt: image alt text
+      - title: "이천양정여자고등학교"
+        year: "2015.3 - 2018.02"
+        desc: " "
+        image: assets/img/timeline/school.png
         alt:
         # you can enforce the alignment
         align: right
-    end: "Be Part <br> of Our <br> Story!"
+    end: "Be Part <br> of My <br> Story!"
 
   about:
-    title: "About Us"
+    title: "About Me"
     text: "our story"
-    body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported."
+    body: "저의 목표는 사용자 입장에서 편한 서비스를 제공하는 것입니다. <br><br>저는 대학교 3학년 때 웹 프로그래밍을 처음으로 배우게 됐습니다. <br>작성한 코드를 콘솔 창이나 서버가 아닌 웹에서 실시간으로 결과를 확인할 수 있어 이 매력에 흠뻑 빠져들게 되었고, 이를 통해 웹 개발 분야에 대한 흥미가 더욱 높아졌습니다. <br>대학교 졸업 후 추가적인 교육을 들으면서 spring boot와 vue를 활용한 프로젝트를 한 달 동안 진행한 경험이 있습니다."
     section: about
 
   clients:
@@ -93,41 +118,19 @@ en: &DEFAULT_EN
         logo: assets/img/clients/creative-market.jpg
 
   team:
-    title: "OUR AMAZING TEAM"
-    text: "Lorem ipsum dolor sit amet consectetur."
-    subtext: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported.
+    title: "CONTACT"
+    text: " "
+  #  subtext: ff
     section: team
     people:
-      - name: "Kay Garland"
-        role: "Lead Designer"
-        image: assets/img/team/500x500.jpg
+      - name: "Hye Won Kim"
+        role: "Backend Developer<br/><br/> Mail : <a href='mailto:4ckdnjssu@gmail.com'>4ckdnjssu@gmail.com</a> <br/>TISTORY : <a href='https://dovnaldisn.tistory.com/'>dovnaldisn.tistory.com</a> <br/>VELOG : <a href='https://velog.io/@dovnaldisn'>velog.io/@dovnaldisn</a><br/><br/>"
+        image: assets/img/me/me11.png
         social:
-          - url: https://twitter.com
-            icon: fab fa-twitter
-          - url: https://facebook.com
-            icon: fab fa-facebook-f
-          - url: https://linkedin.com
-            icon: fab fa-linkedin-in
-      - name: "Larry Parker"
-        role: "Lead Marketer"
-        image: assets/img/team/2.jpg
-        social:
-          - url: https://twitter.com
-            icon: fab fa-twitter
-          - url: https://facebook.com
-            icon: fab fa-facebook-f
-          - url: https://linkedin.com
-            icon: fab fa-linkedin-in
-      - name: "Diana Perterson"
-        role: "Lead Developer"
-        image: assets/img/team/500x500.jpg
-        social:
-          - url: https://twitter.com
-            icon: fab fa-twitter
-          - url: https://facebook.com
-            icon: fab fa-facebook-f
-          - url: https://linkedin.com
-            icon: fab fa-linkedin-in
+          - url: https://github.com/haeburney
+            icon: fab fa-github
+        #  - url: 링크드인 링크
+        #    icon: fab fa-linkedin-in
 
   contact:
     title: "Contact Us"
@@ -146,17 +149,17 @@ en: &DEFAULT_EN
 
   footer:
     legal: "Privacy Policy"
-    social:
-      - url: https://twitter.com
-        icon: "fab fa-twitter"
-      - url: https://facebook.com
-        icon: "fab fa-facebook-f"
-      - url: https://linkedin.com
-        icon: "fab fa-linkedin-in"
-      - url: https://github.com/raviriley/agency-jekyll-theme
-        icon: "fab fa-github"
-      - url: https://instagram.com
-        icon: "fab fa-instagram"
+    # social:
+    #   - url: https://twitter.com
+    #     icon: "fab fa-twitter"
+    #   - url: https://facebook.com
+    #     icon: "fab fa-facebook-f"
+    #   - url: https://linkedin.com
+    #     icon: "fab fa-linkedin-in"
+    #   - url: https://github.com/raviriley/agency-jekyll-theme
+    #     icon: "fab fa-github"
+    #   - url: https://instagram.com
+    #     icon: "fab fa-instagram"
 en-US:
   <<: *DEFAULT_EN
 en-CA:
@@ -165,6 +168,10 @@ en-GB:
   <<: *DEFAULT_EN
 en-AU:
   <<: *DEFAULT_EN
+
+
+
+
 
 # Spanish
 # -------

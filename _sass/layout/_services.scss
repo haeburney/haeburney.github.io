@@ -2,4 +2,28 @@
 .service-heading {
   margin: 15px 0;
   text-transform: none;
+  padding-bottom:20px;
 }
+
+.span-img{
+  display: flex; /* Flexbox를 활성화하여 내부 요소를 정렬 */
+  justify-content: center; /* 수평 가운데 정렬 */
+  align-items: center; /* 수직 가운데 정렬 */
+  background-color: #c59ee4;
+  width:130px;
+  height:130px;
+  padding:10px 10px;
+  border-radius: 50%;
+}
+
+.service-img{
+  max-height:75%;
+  align-items: center;
+}
+
+.div-image{
+  display: flex; /* Flexbox를 활성화하여 내부 요소를 정렬 */
+  justify-content: center; /* 수평 가운데 정렬 */
+  align-items: center; /* 수직 가운데 정렬 */
+}
+
