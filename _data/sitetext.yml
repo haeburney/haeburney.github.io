@@ -18,22 +18,42 @@ en: &DEFAULT_EN
 
   services:
     title: "Skills"
-    text: "Lorem ipsum"
+    text: "사용 경험이 있는 기술입니다."
     section: services
     list:
       - title: "JAVA"
         desc: " "
         img : assets/img/language/JAVA.svg
-      - title: "JavsScript"
-        desc: " "
-        img : assets/img/language/JS.svg
       - title: "Spring Boot"
         desc: " "
         img : assets/img/language/spring.svg
         alt: image alt text
+      - title: "JavsScript"
+        desc: " "
+        img : assets/img/language/JS.svg
+      - title: "Vue"
+        desc: " "
+        img : assets/img/language/Vue.png
+        alt: image alt text
+      - title: "React"
+        desc: " "
+        img : assets/img/language/React.png
+        alt: image alt text
+      - title: "Oracle"
+        desc: " "
+        img : assets/img/language/Oracle.png
+        alt: image alt text
+      - title: "MySql"
+        desc: " "
+        img : assets/img/language/MySql.svg
+        alt: image alt text
       - title: "C언어"
         desc: " "
         img : assets/img/language/c.svg
+        alt: image alt text
+      - title: "Bootstrap"
+        desc: " "
+        img : assets/img/language/Bootstrap.png
         alt: image alt text
       - title: "HTML5"
         desc: " "
@@ -95,7 +115,7 @@ en: &DEFAULT_EN
 
   about:
     title: "About Me"
-    text: "our story"
+    text: "my story"
     body: "저의 목표는 사용자 입장에서 편한 서비스를 제공하는 것입니다. <br><br>저는 대학교 3학년 때 웹 프로그래밍을 처음으로 배우게 됐습니다. <br>작성한 코드를 콘솔 창이나 서버가 아닌 웹에서 실시간으로 결과를 확인할 수 있어 이 매력에 흠뻑 빠져들게 되었고, 이를 통해 웹 개발 분야에 대한 흥미가 더욱 높아졌습니다. <br>대학교 졸업 후 추가적인 교육을 들으면서 spring boot와 vue를 활용한 프로젝트를 한 달 동안 진행한 경험이 있습니다."
     section: about
 
