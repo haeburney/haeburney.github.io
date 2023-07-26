@@ -23,7 +23,7 @@ en: &DEFAULT_EN
     list:
       - title: "JAVA"
         desc: " "
-        img : assets/img/language/java.svg
+        img : assets/img/language/JAVA.svg
       - title: "JavsScript"
         desc: " "
         img : assets/img/language/JS.svg
