@@ -1,12 +1,12 @@
 ---
-title: Project Name
-subtitle: Lorem ipsum dolor sit amet consectetur.
+title: Irang (아이랑)
+subtitle: 어린이집 알림장 웹 프로젝트
 image: assets/img/portfolio/uscream/login.png
 alt: Keep Exploring
 
 caption:
-  title: Explore
-  subtitle: Graphic Design
+  title: Irang (아이랑)
+  subtitle: 어린이집 알림장 웹 프로젝트
   thumbnail: assets/img/portfolio/uscream/login.png
 ---
 

@@ -95,11 +95,24 @@
       margin-top: 0;
       margin-bottom: 30px;
     }
+    ul{
+      padding-left : 0;
+    }
     img {
       margin-bottom: 30px;
+      width:100%;
     }
     button {
       cursor: pointer;
+    }
+    li {
+      list-style-type : none;
+    }
+    .highlight{
+      background-color: #eaeaea;
+      padding : 10px 10px;
+      border-radius: 20px;
+      margin-bottom : 0px;
     }
   }
   .close-modal {
@@ -136,5 +149,8 @@
         background-color: $gray-900;
       }
     }
+  }
+  .modal-project-content{
+    text-align: left;
   }
 }
