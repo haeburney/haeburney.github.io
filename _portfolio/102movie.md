@@ -95,18 +95,35 @@ YouTube API를 이용하여 영화 예고편 영상을 가져왔습니다.<br/><
 
 <hr/><br/>
 <h5>The Feature I Developed</h5>
-<strong>① 내 정보 수정 (비동기)</strong><br/><br/>
-<strong>② 마이페이지</strong><br/>
+<strong>① 회원가입 (비동기)</strong><br/>
+<img src="assets/img/portfolio/movieproject/join.gif"><br/>
+<strong>② 내 정보 수정 (비동기)</strong><br/><br/>
+<strong>③ 마이페이지</strong><br/>
 찜한 기록 보기 + 찜 취소 기능 (비동기)<br/>
 별점 기록 보기 + 별점별로 기록 보기 (비동기)<br/>
 코멘트 기록 보기 (한 줄만 출력되게)<br/>
 팔로우 추가 + 취소  <br/>
 한 줄 소개 추가 + 수정 + 삭제 <br/><br/>
-<strong>③ 다른 유저 페이지</strong><br/> 
+<strong>④ 다른 유저 페이지</strong><br/> 
 팔로우 추가 + 취소 <br/>
 찜한 기록 보기 <br/>
 별점 기록 보기 <br/>
 코멘트 기록 보기 <br/><br/><br/>
+
+<h5>The Feature Team Developed</h5>
+<strong>Main Page</strong><br/>
+<img src="assets/img/portfolio/movieproject/main.gif">
+index 페이지 입니다.
+처음 페이지는 슬라이드 형식으로 대표 영화를 소개하는 구성을 보여주고 있고, 메뉴바 외의 공간을 클릭하면 "인기순"으로 영화 리스트를 보여주는 페이지로 넘어가게 됩니다.<br/><br/><br/>
+<strong>장르별로 보기</strong><br/>
+<img src="assets/img/portfolio/movieproject/genre.gif"><br/><br/><br/>
+<strong>인기순, 평점순, 개봉예정작으로 보기</strong><br/>
+<img src="assets/img/portfolio/movieproject/type.gif">
+인기순, 평점순, 개봉예정작별로 영화 리스트를 볼 수 있으며 페이징 구현했습니다.<br/><br/><br/>
+<strong>리뷰 작성하기</strong><br/>
+<img src="assets/img/portfolio/movieproject/review.gif">
+영화 디테일 페이지에서 리뷰를 작성할 수 있습니다.
+스포일러가 표시된 후기를 작성할 경우에 😀같이 생긴 이모티콘 버튼을 클릭하고 작성할 수 있습니다.<br/><br/>
 
 <h5>Development Reflections (KPT)</h5>
 <strong>[Problem]</strong><br/>
