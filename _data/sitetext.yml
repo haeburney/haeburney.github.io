@@ -73,7 +73,7 @@ en: &DEFAULT_EN
 
   portfolio:
     title: "Portfolio"
-    text: "Lorem ipsum dolor sit amet consectetur."
+    text: "그동안 진행했던 프로젝트를 정리했습니다."
     section: portfolio
     closebutton: "Close Project"
 

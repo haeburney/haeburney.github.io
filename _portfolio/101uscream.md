@@ -120,10 +120,19 @@ NHN KCP API를 KIOSK 페이지에서 결제 기능을 구현했습니다.<br/><b
 
 <hr/><br/>
 <h5>The Feature I Developed</h5>
-직원 등록/수정/삭제<br/>
-직원 스케줄 추가/수정/삭제<br/>
-직원 근태관리<br/>
+<strong>직원 등록/수정/삭제</strong><br/>
+<img src="assets/img/portfolio/uscream/empadd.gif"><br/><br/>
+<strong>직원 스케줄 등록</strong><br/>
+<img src="assets/img/portfolio/uscream/scheduleadd.gif"><br/><br/>
+<strong>직원 스케줄 추가/수정/삭제</strong><br/>
+<img src="assets/img/portfolio/uscream/scheduledelete.gif"><br/><br/>
+<strong>직원 근태관리</strong>
+<img src="assets/img/portfolio/uscream/attendance.gif"><br/><br/>
+<br/><br/><br/>
 
+<h5>The Feature Team Developed</h5>
+<strong>login</strong>
+<img src="assets/img/portfolio/uscream/ulogin.gif">
 
 <h5>Development Reflections (KPT)</h5>
 <strong>[Problem]</strong><br/>
