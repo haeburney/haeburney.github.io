@@ -14,8 +14,8 @@ alt: image alt text
 {:.list-inline} 
 - <strong>Duration</strong> : 2023.06.12 ~ 2023.07.12 (31일) <br/>
 - <strong>Team Members</strong> : 6 <br/>
-- <strong>Github Repository main</strong> : <a href="https://github.com/haeburney/final_uscream">github.com/haeburney/final_uscream</a><br/>
-- <strong>Github Repository kiosk</strong> : <a href="https://github.com/haeburney/final_kiosk">github.com/haeburney/final_kiosk</a><br/>
+- <strong>Github Repository main</strong> : <a href="https://github.com/haeburney/final_uscream_vue">github.com/haeburney/final_uscream_vue</a><br/>
+- <strong>Github Repository kiosk</strong> : <a href="https://github.com/haeburney/final_kiosk_vue">github.com/haeburney/final_kiosk_vue</a><br/>
 - <strong>Deploy Site</strong> : 배포사이트 업로드 미정<br/><br/>
  
 <h5>Stack</h5>
@@ -55,7 +55,7 @@ alt: image alt text
 - 박재연 : 공지사항, 고객의 소리 기능<br/>
 - 방현중 : GIT 관리, 메일 시스템 구현<br/> 
 - 원유경 : 매출 관리 기능 (매출, 순매출)<br/> 
-- 양승혁 : 조장님, 발주 및 상품 관리 기능, 추가적인 KIOSK 프로그램 기능 구현, 카카오 로그인 API, NHN 결제 구현<br/><br/><br/>
+- 양승혁 : 리더, 발주 및 상품 관리 기능, 추가적인 KIOSK 프로그램 기능 구현, 카카오 로그인 API, NHN 결제 구현<br/><br/><br/>
 
 <h5>Features</h5>
 
@@ -71,8 +71,44 @@ alt: image alt text
 
 <br/><br/>
 
+<h5>ERD</h5>
+<strong>main</strong><br/>
+<img src="assets/img/portfolio/uscream/erdMain.png"><br/><br/>
+<strong>kiosk</strong><br/>
+<img src="assets/img/portfolio/uscream/erdKiosk.png"><br/><br/><br/>
+
 <h5>Design-Prototype</h5>
-miro를 이용하여 prototype을 만들었습니다.<br/>
+miro를 이용하여 prototype을 만들었습니다.<br/><br/>
+<strong>kiosk</strong><br/>
+<img src="assets/img/portfolio/uscream/mirokiosk.png"><br/><br/>
+<strong>전체</strong><br/>
+<img src="assets/img/portfolio/uscream/miroall.png"><br/><br/>
+<strong>사이드 메뉴</strong><br/>
+<img src="assets/img/portfolio/uscream/mironav.png"><br/><br/>
+<strong>매출</strong><br/>
+<img src="assets/img/portfolio/uscream/mirosales.png"><br/><br/>
+<strong>스토어(매장)</strong><br/>
+<img src="assets/img/portfolio/uscream/mirostore.png">
+<img src="assets/img/portfolio/uscream/mirostoreedit.png"><br/><br/>
+<strong>메일</strong><br/>
+<img src="assets/img/portfolio/uscream/miromail1.png">
+<img src="assets/img/portfolio/uscream/miromail2.png">
+<img src="assets/img/portfolio/uscream/miromail3.png"><br/><br/>
+<strong>상품</strong><br/>
+<img src="assets/img/portfolio/uscream/miroproduct1.png">
+<img src="assets/img/portfolio/uscream/miroproduct2.png">
+<img src="assets/img/portfolio/uscream/miroproduct3.png"><br/><br/>
+<strong>직원</strong><br/>
+<img src="assets/img/portfolio/uscream/miroemp1.png">
+<img src="assets/img/portfolio/uscream/miroemp2.png">
+<img src="assets/img/portfolio/uscream/miroemp3.png">
+<img src="assets/img/portfolio/uscream/miroemp4.png"><br/><br/>
+<strong>공지사항</strong><br/>
+<img src="assets/img/portfolio/uscream/mironotice1.png">
+<img src="assets/img/portfolio/uscream/mironotice2.png"><br/><br/>
+<strong>고객의 소리</strong><br/>
+<img src="assets/img/portfolio/uscream/mironotice3.png">
+<br/><br/><br/>
 
 <h5>API</h5>
 <strong>① [KAKAO Maps API](https://apis.map.kakao.com/)</strong><br/>
@@ -84,6 +120,10 @@ NHN KCP API를 KIOSK 페이지에서 결제 기능을 구현했습니다.<br/><b
 
 <hr/><br/>
 <h5>The Feature I Developed</h5>
+직원 등록/수정/삭제<br/>
+직원 스케줄 추가/수정/삭제<br/>
+직원 근태관리<br/>
+
 
 <h5>Development Reflections (KPT)</h5>
 <strong>[Problem]</strong><br/>
