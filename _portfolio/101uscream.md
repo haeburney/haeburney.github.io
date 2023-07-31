@@ -127,7 +127,37 @@ NHN KCP API를 KIOSK 페이지에서 결제 기능을 구현했습니다.<br/><b
 
 <h5>Development Reflections (KPT)</h5>
 <strong>[Problem]</strong><br/>
+정해진 일정에 비하여 기능을 오버해서 잡았다.
+그래서 디버깅을 제대로 하지 못하는 실수를 저질렀다.
 
 <strong>[Try]</strong><br/>
+근태 관리 테이블을 통하여 인건비를 계산해야 했다. 언제 어디서 어떻게?를 고민했다가 @Scheduled라는 어노테이션을 사용하여 매달 1일에 전 달의 인건비를 계산해주는 함수를 작성했다.
 
+```
+// 매달 월급 계산해주기
+@Scheduled(cron = "0 0 0 1 * ?") 		// 매달 1일 00:00:00에 실행
+public Map myScheduledFunction() {
+	Map map = new HashMap();
+	MonthlypayDto mpDto = new MonthlypayDto();
+
+	LocalDate today = LocalDate.now();
+	int year = today.getYear(); 		// 해당 년도 가져오기
+	int month = today.getMonthValue(); // 해당 월 가져오기
+
+	if (month == 1) {
+		month = 12;
+		year -= 1;
+	} else {
+		month -=1;
+	}
+
+	boolean result = sumF(year, month, "0");
+	map.put("flag", result);
+	return map;
+}
+```
+<br/><br/>
 <strong>[Keep]</strong><br/>
+
+
+<br/><br/><br/>
