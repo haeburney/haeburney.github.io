@@ -139,7 +139,7 @@ en: &DEFAULT_EN
 
   team:
     title: "CONTACT"
-    text: " "
+    text: "Latest Update Date : 2023-08-01"
   #  subtext: ff
     section: team
     people:

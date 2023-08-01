@@ -103,25 +103,30 @@ miro를 이용하여 prototype을 만들었습니다.<br/>
 
 <hr/><br/>
 <h5>The Feature I Developed</h5>
+
 <strong>① 선생님 일지</strong><br/>
-일지 등록/수정/삭제<br/> 
-일지 리스트 : 검색<br/><br/>
-<strong>② 아이 일지</strong><br/>
-댓글 작성/수정/삭제<br/>
-메신저 앱처럼 사용자는 오른쪽, 상대방은 왼쪽에 배치<br/><br/>
+<strong>선생님 버전</strong><br/>
+일지 작성하기
+<img src="assets/img/portfolio/irang/teacherlogadd.gif"><br/><br/>
+일지 수정하기
+<img src="assets/img/portfolio/irang/teacherlogedit.gif"><br/><br/>
+일지리스트 : 검색하기
+<img src="assets/img/portfolio/irang/tltsearch.gif"><br/><br/><br/>
+<strong>아이 버전</strong><br/>
+일지리스트 : 검색하기
+<img src="assets/img/portfolio/irang/tlcsearch.gif"><br/><br/>
+
+<strong>② 선생님 일지 댓글 작성</strong><br/>
+메신저 앱처럼 사용자는 오른쪽, 상대방은 왼쪽에 배치<br/>
+아이 계정으로 댓글 작성/수정/삭제하기<br/>
+<img src="assets/img/portfolio/irang/tlccomment.gif"><br/><br/>
+선생님 계정으로 댓글 작성/수정/삭제하기
+<img src="assets/img/portfolio/irang/tlcomment.gif"><br/><br/><br/><br/>
 
 <h5>The Feature Team Developed</h5>
-<strong>Main Page</strong><br/>
+<br/><br/>
 
 
-<h5>Development Reflections (KPT)</h5>
-<strong>[Problem]</strong><br/>
-<br/>
-
-<strong>[Try]</strong><br/>
-<br/>
-<br/>
-
-<strong>[Keep]</strong><br/>
-JPA와 Spring을 제대로 활용하는 법을 배우게 됐고, Jquery를 쓰면서 비동기에 대한 이해도가 상승하게 됐다. 오류를 경험하며 의존성 주입에 대한 이해도를 높일 수 있었고, (내가 쓸 변수명, 가져올 변수명) 변수명의 일치와 데이터를 전송할 때 변수 값을 속성 이름에 어떻게 넣어야 하는지를 배웠습니다. 더불어 꼼꼼한 설계를 통해 다시 회의해야 하는 시간을 줄일 수 있었다. 팀원과의 소통의 중요성을 깨달았고 더 적극적인 자세로 의견을 제시해야 한다는 것도 배웠습니다.
-<br/>
+<h5>Development Reflections</h5>
+JPA와 Spring을 제대로 활용하는 법을 배우게 됐고, Jquery를 쓰면서 비동기에 대한 이해도가 상승하게 됐다. 오류를 경험하며 의존성 주입에 대한 이해도를 높일 수 있었고, (내가 쓸 변수명, 가져올 변수명) 변수명의 일치와 데이터를 전송할 때 변수 값을 속성 이름에 어떻게 넣어야 하는지를 배웠습니다. 더불어 꼼꼼한 설계를 통해 다시 회의해야 하는 시간을 줄일 수 있었다. 팀원과의 소통의 중요성을 깨달았고 더 적극적인 자세로 의견을 제시해야 한다는 것도 배웠다.
+<br/><br/>

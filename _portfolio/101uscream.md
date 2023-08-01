@@ -5,7 +5,7 @@ caption: #what displays in the portfolio grid:
   thumbnail: assets/img/portfolio/uscream/login.png
   
 #what displays when the item is clicked:
-title: Uscream
+title: 유스크림(Uscream)
 subtitle: 매장 & 상품 관리 프로그램
 image: assets/img/portfolio/uscream/login.png #main image, can be a link or a file in assets/img/portfolio
 alt: image alt text
@@ -29,6 +29,15 @@ alt: image alt text
 유스크림 프로젝트는 KOSTA 257기 파이널 프로젝트로 진행되었습니다.<br/><br/>
 
 <h5>Motivation</h5>
+프로젝트 회의에서 여러 아이디어가 나왔는데, 이들이 공통적으로 가지고 있던 핵심은 "비즈니스 프로세스 관리"였습니다. 
+이후 두 가지 주제로 좁혀졌고, 투표 결과 <strong>"매장 & 상품 관리 프로그램"</strong>으로 결정되었습니다.<br/><br/>
+<strong>① 매출 계산</strong> : 매출과 매출에서 원가, 인건비를 제외한 순매출을 계산하는 기능을 통해 년별, 월별, 일별, 지점별 등 다양한 측면에서 캘린더로 매출을 보기 시각적으로 확인할 수 있습니다.<br/>
+<strong>② 상품(발주) 관리</strong> : 본사는 상품을 추가하거나 삭제할 수 있으며, 지점은 필요한 상품을 신청할 수 있습니다.<br/>
+<strong>③ 직원 관리</strong> : 지점은 직원을 추가/수정/삭제 할 수 있으며 스케줄 관리를 통하여 해당 날짜에 근무 인원 수를 한 눈에 확인할 수 있습니다. 또한 근태 관리를 통하여 직원의 출퇴근 시간을 파악할 수 있습니다.<br/>
+<strong>④ 메일</strong> : 지점이나 본사 계정은 서로 메일을 주고 받을 수 있어, 소통이 용이해집니다.<br/>
+<strong>⑤ 공지사항, 고객의 소리</strong> : 본사에서 공지사항을 작성/수정/삭제할 수 있고 지점은 이를 확인 할 수 있습니다. 또한, 고객에게서 온 컴플레인이나 칭찬의 말을 본사에서 작성(전달)하여 지점에서 확인할 수 있습니다. 
+컴플레인의 경우, 지점은 해당 글에 댓글로 답변을 작성하는 기능을 구현하여, 지점은 컴플레인에 대한 피드백과 개선 방안을 고려하고, 필요한 조치를 취할 수 있습니다. 이를 통해 소통과 고객 서비스 향상에 기여하게 됩니다.
+<br/><br/>
 
 <h5>Project Schedule</h5>
 <strong>Main</strong><br/>
@@ -133,25 +142,66 @@ NHN KCP API를 KIOSK 페이지에서 결제 기능을 구현했습니다.<br/><b
 <h5>The Feature Team Developed</h5>
 <strong>login</strong>
 <img src="assets/img/portfolio/uscream/ulogin.gif">
+<br/><br/><br/><br/><br/>
 
 <h5>Development Reflections (KPT)</h5>
 <strong>[Problem]</strong><br/>
-정해진 일정에 비하여 기능을 오버해서 잡았다.
-그래서 디버깅을 제대로 하지 못하는 실수를 저질렀다.
+이번 프로젝트에서는 정해진 일정보다 기능을 많이 추가하여 일정 관리에 어려움을 겪었다. 이로 인해 디버깅 시간이 부족해져 오류를 처리하는데 제대로 신경쓰지 못한 실수가 발생하였다. 앞으로는 일정 관리를 더 신중하게 고려하고, 개발 단계에서 디버깅에 충분한 시간을 확보하는 것이 중요하다고 깨닫게 되었다.<br/><br/>
 
 <strong>[Try]</strong><br/>
-근태 관리 테이블을 통하여 인건비를 계산해야 했다. 언제 어디서 어떻게?를 고민했다가 @Scheduled라는 어노테이션을 사용하여 매달 1일에 전 달의 인건비를 계산해주는 함수를 작성했다.
+<strong>① Javascript 시간 타입 변경해주기</strong><br/>
+Javascript에서 input 태그를 통해 날짜와 시간을 받아오면 
+
+```
+startdate : Thu Jun 01 2023 09:00:00 GMT+0900 (한국 표준시)
+enddate : Fri Jun 30 2023 09:00:00 GMT+0900 (한국 표준시)
+```
+
+<br/>이런 식으로 불러와진다.
+하지만 자바에 넘길 때에는 <strong>2023-06-04T09:00:00</strong> 이런 식으로 들어가야 한다. 
+그래서 input에서 받아온 값을 변경해줬다.
+
+```
+const dateObj = new Date(startdate)
+const year = dateObj.getFullYear();
+const month = String(dateObj.getMonth() + 1).padStart(2, "0");
+const day = String(dateObj.getDate()).padStart(2, "0");
+const hours = String(dateObj.getHours()).padStart(2, "0");
+const minutes = String(dateObj.getMinutes()).padStart(2, "0");
+const seconds = String(dateObj.getSeconds()).padStart(2, "0");
+const formattedDate = `${year}-${month}-${day}T${hours}:${minutes}:${seconds}`;
+```
+
+<br/>
+
+<strong>② Javascript Date 객체 → String으로 바꾸기</strong><br/>
+캘린더에서 이벤트를 클릭하면 이벤트 정보를 가져오게 만들었다.
+시간을 쪼개야 하는데 Date Object라 불가능했다.
+그래서 String으로 바꾼 다음 slice를 사용했다.
+
+```
+let startTime = JSON.stringify(info.event._instance.range.start)
+```
+
+
+
+<br/><br/><br/>
+<strong>[Keep]</strong><br/>
+① 주석을 통해 코드의 목적을 명확히 설명하여 향후 유지보수에 용이하게 만들었다.
+내가 작성한 코드를 다시 정독하면서 불필요한 부분은 제거하고, 다시 살펴보았을 때 '왜 이렇게 작성했는지?'라는 생각이 들거나, 다른 팀원이 코드를 볼 때 헷갈릴 수 있는 부분에 주석을 적극적으로 추가하였다. <br/>
+
+② 그리고 근태 관리 테이블을 통하여 인건비를 계산해야 했다. 언제 어디서 어떻게?를 고민하다가 <strong>@Scheduled</strong>라는 어노테이션을 사용하여 매달 1일에 전달의 인건비를 계산해주는 함수를 작성했다.
 
 ```
 // 매달 월급 계산해주기
-@Scheduled(cron = "0 0 0 1 * ?") 		// 매달 1일 00:00:00에 실행
+@Scheduled(cron = "0 0 0 1 * ?")		// 매달 1일 00:00:00에 실행
 public Map myScheduledFunction() {
 	Map map = new HashMap();
 	MonthlypayDto mpDto = new MonthlypayDto();
 
 	LocalDate today = LocalDate.now();
 	int year = today.getYear(); 		// 해당 년도 가져오기
-	int month = today.getMonthValue(); // 해당 월 가져오기
+	int month = today.getMonthValue(); 	// 해당 월 가져오기
 
 	if (month == 1) {
 		month = 12;
@@ -165,8 +215,5 @@ public Map myScheduledFunction() {
 	return map;
 }
 ```
-<br/><br/>
-<strong>[Keep]</strong><br/>
-
 
 <br/><br/><br/>
